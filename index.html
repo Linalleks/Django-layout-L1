@@ -19,6 +19,7 @@
     }
 
     .control-panel {
+      display: flex;
       background-color: black;
       padding: 5px;
     }
@@ -29,6 +30,14 @@
       cursor: pointer;
       width: 28px;
       margin-right: 5px;
+    }
+    .player-button:last-child {
+      margin-right: unset;
+    }
+
+    .empty-space {
+      display: flex;
+      flex-grow: 1;
     }
 
     .button-icon {
@@ -53,6 +62,10 @@
       </button>
       <button class="js-mute-button player-button" type="button" name="mute-button" hidden>
         <i class="fa fa-volume-up button-icon" aria-hidden="true"></i>
+      </button>
+      <div class="empty-space"></div>
+      <button class="js-fullscreen-button player-button" type="button" name="fullscreen-button">
+        <i class="fa fa-expand button-icon" aria-hidden="true"></i>
       </button>
     </div>
   </div>
